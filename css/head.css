@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+a{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+/*设置nav样式*/
+.nav{
+width: 100%;
+min-width: 1920px;
+background-color: black;
+opacity: 0.7;
+}
+.nav>ul>li{
+    min-height:30px;  
+    height:auto;
+}
+.logo_warp{
+    float: left;
+}
+.logo_warp a img{
+    width:170px;
+    height: 85px;
+}
+/*导航*/
+.nav_list>a{
+    float: left;
+}
+
+.nav_list{
+    float: left;
+    margin-left: 10px;
+    margin-top: 42px;
+}
+
+.nav_list>li{
+    display: block;
+    width:120px;
+    float: left;
+    height: 73px;
+    line-height: 15px;
+}
+.nav_list>li>a {
+font-size: 18px;
+color: white;
+}
+/*input 搜索*/
+.search_show{
+    position: relative;
+    width: 240px;
+    height: 28px;
+    float: left;
+    line-height:85px;
+    margin-left: 0px;
+}
+.icon{
+    height: 115px;
+}
+.search_show input{
+    width:170px;
+    height: 23px;
+    padding-left: 10px;
+    border-radius: 20px;
+    /* box-shadow:0 0 5px 2px orangered; */
+    border:1px solid orange;
+}
+.input_icon{
+display: inline-block;
+position: absolute;
+left: 155px;
+z-index: 1;
+background-image:url(images/search_black.png);
+background-repeat: no-repeat;
+background-position: 0px 0px; 
+background-size: 18px;
+width: 20px;
+height: 20px;
+top:35px;
+}
+ /*二级子菜单*/
+ /*二级子菜单的图片箭头方向*/
+ .nav_item>p>a>img{
+    transform: rotate(-90deg); 
+ }
+ /*nav_item的高宽*/
+.nav_item>p{
+    height: 40px;
+    line-height: 40px;
+    width: 500px; 
+}
+
+.nav_list li ul:nth-child(1){
+   top: 40px;
+}
+.nav_item>p>a{
+    color: orange;
+    font-weight: bold;
+    font-size: 16px;
+}
+.nav_item>p>a:hover{
+    color: blue;
+}
+/*二级菜单下的li*/
+.nav_item>li {
+    height: 25px;
+    width: 240px; 
+    display: none;
+}
+.nav_list  li ul:hover  li{
+    display: block;
+}
+.nav_item>li a:hover{
+    color: orange;
+}
+.nav_item>li a{
+    font-size: 14px;
+    color: #a3a3a3;
+}
+/*nav_span 设置二级 菜单的宽度实现和一级菜单左对齐*/
+.nav_span{
+    width: 100%;
+    height: auto;
+}
+.dropdown>li{
+    display: none;
+}
+.dropdown{
+    margin-left:215px;
+}
+/*二级菜单左右分类*/
+.item_span{
+    float: left;
+    width: 270px;
+}
